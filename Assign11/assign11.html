@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Assignment #11</title>
+<script src="assign11.js"></script>
+<link rel="stylesheet" href="style.css">
+
+
+<body>
+<h1>This is Assignment #11</h1>
+
+<p id= "Error_message"></p>
+
+<div class = "container">
+
+    <form onreset="resetForm()" action="assign11.php" method="POST">
+        First Name: <input type="text" name="first_name" id="first_name" onchange="getFistName()"><br>
+        Last Name: <input type="text" name="last_name" id="last_name" onchange="getLastName()"><br><br>
+        Address: <textarea rows="4" cols="50" name = "address" id="address" onclick="getAddress()">Enter your address here..</textarea><br>
+        Phone number: <input type="text" name="phone" id="phone_number" onchange="getPhoneNumber()">
+        <span class="error" style="visibility: hidden;">Please enter number in this format XXX-XXX-XXXX</span><br><br>
+
+        <table class="items_table">
+            <tr>
+                <th>Item</th>
+                <th>Price in US $</th>
+                <th>Purchase</th>
+            </tr>
+            <tr>
+                <td>Leather shoes</td>
+                <td id = "item_0_price">40.00</td>
+                <td><input type="checkbox" name="item_0" id="item_0" value = "40.00" onclick=" getCostItem0(item_0_price.innerText)"></td>
+            </tr>
+            <tr>
+                <td>Leather jacket</td>
+                <td id = "item_1_price">100.00</td>
+                <td><input type="checkbox" name="item_1" id="item_1" value = "100.00" onclick=" getCostItem1(item_1_price.innerText)"></td>
+            </tr>
+            <tr>
+                <td>Leather belt</td>
+                <td id = "item_2_price">20.00</td>
+                <td><input type="checkbox" name="item_2" id="item_2" value = "20.00" onclick=" getCostItem2(item_2_price.innerText)"></td>
+            </tr>
+            <tr>
+                <td>Leather pants</td>
+                <td id="item_3_price">50.00</td>
+                <td><input type="checkbox" name="item_3" id="item_3" value = "50.00" onclick=" getCostItem3(item_3_price.innerText)"></td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <td><fieldset name ="total" id= "total">0</fieldset></td>
+                <th></th>
+            </tr>
+        </table><br><br>
+
+    
+        <b>Credit Card type </b>
+        <br><br>Visa<input type="radio" name="card" value="Visa"><br>
+        Mastercard<input type="radio" name="card" value="Mastercard"><br>
+        American express<input type="radio" name="card" value="American express"><br><br>
+        
+        Credit card #: <input type="text" name="credit_card" id="credit_card" onchange = "getCreditCardNumber()">
+        <span class="error" style="visibility: hidden;">Please enter a valid 16 digit Credit Card Number</span><br>
+        Credit card expiration date: <input type="text" name="exp_date" id="exp_date" onchange="getCreditCardExp()">
+        <span class="error" style="visibility: hidden;">Please enter date in the format mm/dd/yyyy</span><br><br><br>
+
+        <input type="reset" name="reset" value= "Reset"><br>
+        <input type="submit" name="validate" value="Submit" style="height:20px" onclick="submitForm()">
+    </form>
+
+</div> 
+
+</body>
+</html>

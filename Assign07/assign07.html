@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment #7</title>
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="styling.css">
+    
+</head> 
+<body>
+        <h1>Montlhy Payment Calculator</h1>
+
+        <div class="flex-container">
+            <form name = "form_calculator" action = "undefined">
+            <p>APR  <input type="text" id="apr" onchange= "getAPR(); calculateMonthlyPaymentAlways()" style="border-color: black;"> %</p><p id="error1"></p> 
+           
+            <p>Loan Term <input type="text" id="term" onchange="getTerm(); calculateMonthlyPaymentAlways()" style="border-color: black;"> years</p><p id="error2"></p>
+            
+            <p>Amount <input type="text" id="amount" onchange="getAmount(); calculateMonthlyPaymentAlways()" style="border-color: black;"></p>
+            <br>
+            <input type="button" value="Calculate" style="height:20px" onclick="calculateMonthlyPayment()">
+            <input type="reset" value= "Reset" onclick="focusToFirst()">
+         </form>
+        
+         <p>Your Monhly payment is of: <span id="payment" ></span> </p>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+table:hover{
+  font-size: 20px;
+}
+  th,tr,td {
+  border: 1px solid red;
+  text-align: left;
+  padding: 8px;
+}
+input#URL{
+    text-align: left;
+}
+h1{
+  text-align: center;
+  font-family: cursive;
+  color: blue;
+}
+body{
+  background-color: lightblue;
+}
+div{
+  text-align: center;
+  margin-top: 50px;
+}
+select{
+  background-color: wheat;
+  color: red;
+}
+select:hover{
+  font-size: 20px;
+}
+option{
+  color: red;
+}
+input{
+  color: rgb(139, 80, 6);
+}
+input:hover{
+  font-size: 20px;
+}
+button{
+  background-color: red;
+}
+button:hover{
+  background-color: greenyellow;
+  font-size: 20px;
+}
+p{
+  color: rgb(139, 80, 6);
+
+}
+p:hover{
+  font-size: 20px;
+}

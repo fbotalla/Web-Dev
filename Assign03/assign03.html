@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+  table, th, td {
+  border: 4px solid yellowgreen;
+  border-collapse: collapse;
+  color: white;
+ }
+ .foot{
+     color: chartreuse;
+     text-align: center;
+ }
+ div#Sport{
+     background-color: rgb(118, 166, 228);
+     color: black;
+ }
+ h1#h1{
+    text-align: center;
+     color:orangered;
+ }
+ header#header1{
+    text-align: center;
+     color:rgb(112, 40, 112);
+ }
+ div#Friend{
+    background-image: url("kidsPlaying.jpg");
+    background-size:cover;
+    background-color:rgba(0, 0, 0,0);
+    color: red;   
+ }
+
+ h2#Friendh2{
+text-align: center;
+ }
+</style>
+<title>Fabrizio Botalla's Enhanced Home Page</title>
+</head>
+<body style="background-color:rgb(34, 32, 32)">  
+<h1 id = h1>Welcome to Fabrizio Botalla's Home Page</h1>
+<header id = header1>This is my very first webpage!</header>
+<p style="color:white">My name is Fabrizio Botalla, I am a software engineering major and I am from Italy</p>
+<p style="color:white">I have been married for about a year and a half to my <span style="color:purple">beautiful wife!</span> Here is a picture of us!</p>
+<p style= "color: cyan">If you need to contact me here you can find my contact informatiom! <a href="#Contact" style= "color: cyan">(Click here)</a></p>
+<p style= "color: cyan">If you already know you want to be my friend then send over your information!<a href="#Friend" style= "color: cyan">(Click here)</a></p>
+<img src="IMG_9011.jpg" alt="Family" width="200" height="160"><br><br>
+<a style="color:white" href="index.html">CS213 Assignments</a><br>
+<hr style="color:orangered">
+<p style="color:white">Here is a quote from Elder Holland, I like it because it helps to never give up no matter where we are in life:</p>
+<blockquote style="font: italic; font-size: 20px; color: rgb(61, 197, 231)">�Keep trying. Keep trusting. Keep believing. Keep growing. Heaven will be cheering you on today, tomorrow, and forever.� �Elder Jeffrey R. Holland, </blockquote><br>
+<table style="width: 100%">
+    <tr style="text-align: left">
+        <th style="font: bold">Class #</th>
+        <th style="font: bold">Course Description</th>
+        <th style="font: bold">Sec #</th>
+        <th style="font: bold">Class time</th>
+        <th style="font: bold">Class location</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Software Design and Development</td>
+        <td>03</td>
+        <td>Online</td>
+        <td>Online</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Project Management</td>
+        <td>03</td>
+        <td>Online</td>
+        <td>Online</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Web Engineering I</td>
+        <td>07</td>
+        <td>Online</td>
+        <td>Online</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Techinical Communication</td>
+        <td>04</td>
+        <td>Online</td>
+        <td>Online</td>
+    </tr>
+</table>
+<hr style="color:orangered">
+<p style="color:white"><strong>In conclusion I wanted to share a picture of myself. <u style="color: white">have also uploaded it on my folder.</u></strong></p>
+<img src="me.jpg" alt="This is me!" width="200" height="160">
+
+<div id = "Sport">
+<p>Let me tell you a little about my favorite sport: soccer! Since I was 5 years old I was kicking a soccer ball around. Through time I started to play for various team until I had the opportunity to play semi professional.</p>
+<p>Those two years were really great! I grew a ton as a person as well in the sport. My very favorte team is <a href="https://www.juventus.com/it/" style="color: black"> Juventus.</a></p>
+<p>Last year they actually bought the best player in the world, <b>Cristiano Ronaldo</b>. The purchases was over 100 million euros.</p>
+<p>Quite interesting, was the fact that Juventus club made their money back in less than 1 year just by selling Ronaldo's shirts.</p>
+<p><i>One the most incredible moment that has to do with soccer happened in 2006.<a href="https://www.fifa.com/worldcup/archive/germany2006/teams/team=43954/index.html" style="color: black"> Italy won the world cup!</a></i></p>
+<p>Here  below is a great highlight of an emotional day for me!</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Nlsm0RlC8zI"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div id = "Friend">
+<h2 id = Friendh2>Become my friend!</h2>   
+<form action="/friends_page/f.php">
+    <p>First  name </p>
+    <input type="text"><br>
+    <p>Last name</p>
+    <input type="text"><br>
+    <p>Tell me something about you </p>
+    <textarea name="Info" id="Person" cols="20" rows="4"></textarea>
+    <p>What do you like to do?</p>
+    
+    <br><input type="checkbox" name="Sport" id="Soccer">Play soccer
+    <br><input type="checkbox" name="Outdoors" id="Outdoors">Outdoors activities
+    <br><input type="checkbox" name="Programming" id="Java/C++/HTML">Computer programming
+    
+    <br><p>Please select your gender:</p>
+    <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br>  
+
+    <p>When can you hang out?</p>
+    <select>
+        <option value="Select">Select</option>
+        <option value="Morning">Morning</option>
+        <option value="Afternoon">Afternoon</option>
+        <option value="Evening">Evening</option>
+        </select>
+ 
+    <br><input type="submit" value="Submit"><br>
+    <input type="reset" value= "Reset">
+</form>    
+</div>
+
+<footer class = "foot">
+<div id = "Contact">
+<h4>Contact Information</h4>
+<p>Email: bot15002@byui.edu</p>
+<p>Telephone #: 808-219-XXXX</p>    
+</div>
+</footer>
+</body>
+</html>

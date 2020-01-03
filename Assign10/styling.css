@@ -1,0 +1,40 @@
+div.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+p#error1, #error2, #error3{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: red;
+font-size: 16px;
+}
+
+span#payment{
+color: green;
+font: 16px;
+}
+p#phpResult{
+    color: red;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin-top: 20px;
+    text-align: center;
+    margin-left:auto; 
+    margin-right:auto;
+  }
+  th,tr,td {
+    border: 1px solid red;
+    text-align: left;
+    padding: 8px;
+  }
+  b:hover{
+      font-size: 22px;
+      color: blue;
+  }

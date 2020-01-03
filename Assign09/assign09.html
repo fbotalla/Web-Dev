@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Assignment #9</title>
+<script src="javascript.js"></script>
+<link rel="stylesheet" href="styling.css">
+
+
+<body>
+    
+<h1>This is Assignment #9</h1>
+<div class = "cities">
+    <b>Choose which country you want to retrieve information regarding its 10 most populated cities</b><br>
+    <select onchange="getCities(this.value)">
+        <option value="Select" >Select</option>
+        <option value="Canada" >Canada</option>
+        <option value="Mexico" >Mexico</option>
+        <option value="Russia" >Russia</option>
+        <option value="USA">USA</option>
+    </select> 
+    <br>
+    <p id = "cities"></p>
+    <br>
+</div>
+
+<div class = "names">
+        <b>Enter a valid text file name to retrieve informatin regarding students</b><br>
+    <input type="text" name="URL" id="URL" value="json.txt">
+    <button onclick="getJson()">Get info</button>
+    <table id = "person"></table>
+</div>
+</body>
+</html>

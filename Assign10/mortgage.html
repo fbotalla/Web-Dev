@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment #10</title>
+    <script src="validating.js"></script>
+    <link rel="stylesheet" href="styling.css">
+    
+</head> 
+<body style="background-color:rgb(238, 240, 140)">
+        <h1>Montlhy Payment Calculator</h1>
+
+        <div class="flex-container">
+            <form name = "form_calculator" onsubmit="return validateForm()" action = "mortgage.php" method="GET">
+            <p>APR  <input type="text" id="apr" name="arp" oninput= "getAPR()" style="border-color: black;"> %</p><p id="error1"></p> 
+           
+            <p>Loan Term <input type="text" id="term" name="term" oninput="getTerm()" style="border-color: black;"> years</p><p id="error2"></p>
+            
+            <p>Amount <input type="text" id="amount" name="amount" oninput="getAmount()" style="border-color: black;"></p><p id="error3"></p>
+            <br>
+            <input type="submit" value="Calculate">
+            <input type="reset" value= "Reset" onclick="focusToFirst()">
+         </form>
+        </div>
+</body>
+
+</html>

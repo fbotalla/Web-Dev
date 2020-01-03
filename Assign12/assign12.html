@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <script src="assign12.js"></script>
+    <title>Assignment #12</title>
+
+    <style>
+    
+    div{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+    margin-top: 20px;
+    text-align: center;
+    margin-left:auto; 
+    margin-right:auto;
+  }
+    
+    </style>
+</head>
+
+
+<body>
+
+    <div >
+    <h1>Mileage Calculator</h1>
+    <form name="mileage" action="javascript:void(0);" style="text-align: left;"> 
+       <p>Enter the start city: <input type="text" name="startCity" id="startCity"  required></p>
+       <p style="visibility: hidden;" id="error1">Please enter a valid city, no numbers allowed</p>
+       <p>Enter the state of the start city: <input type="text" name="startState" id="startStae" required maxlength="2" ></p>
+       <p style="visibility: hidden;" id="error2">Please enter a valid state, no numbers allowed, only two characters long</p>
+       <p>Enter the end city: <input type="text" name="endCity" id="endCity"  required></p>
+       <p style="visibility: hidden;" id="error3">Please enter a valid city, no numbers allowed</p>
+       <p>Enter the state of the end city: <input type="text" name="endState" id="endStae"  required maxlength="2"></p>
+       <p style="visibility: hidden;" id="error4">Please enter a valid state, no numbers allowed, only two characters long</p>
+    </form>
+    <button onclick="setRequest()" style="text-align: center;">Request</button>
+    <p id="answer"></p>
+</div>
+
+</body>
+</html>

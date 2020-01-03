@@ -1,0 +1,38 @@
+tr:hover{
+    background-color: lightblue;
+}
+td,tr{
+  padding: 20px;
+}
+
+tr{
+  border-bottom:1px solid grey;
+
+}
+
+table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin-top: 20px;
+  text-align: center;
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+.flebox-container1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left:auto; 
+    margin-right:auto;
+    width: 50%;
+}
+
+h1{
+  color: red;
+}
+.all{
+  background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url("backgroundImage.jpg");
+  background-size: cover;
+}
