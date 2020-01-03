@@ -3,5 +3,5 @@
 **Personal images and sensitive information have been taken out for privacy purposes**
 
 
-A series of Web sites developed by me as part of my learning experience.
+A series of Web sites developed by me as part of my HTML, CSS JavaScript and PHP learning experience.
 
